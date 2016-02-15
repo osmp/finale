@@ -465,11 +465,7 @@ $(function() {
     });
   };
 
-  // Prevent that participants accidentally exit the experiment by disabling F5 and backspace keys
-  shortcut.add("f5",function() {});  
-  $(window).bind('beforeunload', function(){
-    return 'Are you sure you want to quit the experiment completely?';
-  });   
+  
 
   // Set Settings, get Participant No. and Condition No.
   set_settings();
